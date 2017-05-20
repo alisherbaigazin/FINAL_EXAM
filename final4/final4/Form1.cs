@@ -16,5 +16,16 @@ namespace final4
         {
             InitializeComponent();
         }
+
+        private void panel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            using (Graphics g = panel1.CreateGraphics())
+            {
+                Pen pen = new Pen(Color.Red, 1);
+                SolidBrush sb = new SolidBrush(Color.Red);
+                
+            }
+                
+        }
     }
 }
