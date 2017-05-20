@@ -28,6 +28,11 @@ namespace _3
             int n = c++;
             Button button = sender as Button;
             button1.Text = n.ToString();
+                if (n >= 13)
+                {
+                    n = 1;
+                }
+            
             if (n == 1)
             {
                 label1.BackColor = Color.Red;

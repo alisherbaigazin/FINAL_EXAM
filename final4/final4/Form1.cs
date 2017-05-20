@@ -23,7 +23,7 @@ namespace final4
             {
                 Pen pen = new Pen(Color.Red, 1);
                 SolidBrush sb = new SolidBrush(Color.Red);
-                
+                g.FillEllipse(sb,100,100,50,50);
             }
                 
         }
