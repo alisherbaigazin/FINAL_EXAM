@@ -22,8 +22,31 @@ namespace Final1_
             StreamReader file2 = new StreamReader(@"C:\Users\1\Desktop\final_new\Final1_\Final1_\bin\Debug\file2.txt");
             StreamReader file3 = new StreamReader(@"C:\Users\1\Desktop\final_new\Final1_\Final1_\bin\Debug\file3.txt");
 
-            
 
+            string[] ln1 = file1.ReadToEnd().Split();
+            for(int i = 0; i < ln1.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i+" ");
+                }
+            }
+            string[] ln2 = file2.ReadToEnd().Split();
+            for (int i = 0; i < ln2.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            string[] ln3 = file3.ReadToEnd().Split();
+            for (int i = 0; i < ln3.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
 
         }
     }
