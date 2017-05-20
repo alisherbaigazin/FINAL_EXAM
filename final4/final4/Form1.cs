@@ -12,8 +12,8 @@ namespace final4
 {
     public partial class Form1 : Form
     {
-        Point y;
-        Point x;
+        Point _y;
+        Point _x;
         Graphics g;
         public Form1()
         {
@@ -26,17 +26,18 @@ namespace final4
             {
                 Pen pen = new Pen(Color.Red, 1);
                 SolidBrush sb = new SolidBrush(Color.Red);
-               
-              
-                g.FillEllipse(sb,e.X,e.Y,20,20);
+
+               e.Location=_x;
+                e.Location= _y ;
+                g.FillEllipse(sb,_x,_y,20,20);
             }
                 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            y++;
-
+            _y++;
+Invalidate();
         }
     }
 }
