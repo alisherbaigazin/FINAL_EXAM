@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Final2.Properties
+namespace _3.Properties
 {
 
 
