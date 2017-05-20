@@ -22,6 +22,7 @@ namespace _2
         int b8 = 1;
         int b9 = 1;
         int t = 0;
+        int a = 0;
         public Form1()
         {
             InitializeComponent();
@@ -33,12 +34,12 @@ namespace _2
             int n = b1++;
             Button button = sender as Button;
             button1.Text = n.ToString();
-            if (n % 2 != 0)
-            {
+            if(n % 2 != 0 && n != 1)
+                {
                 t++;
                 textBox1.Text = t.ToString();
             }
-        
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,7 +47,7 @@ namespace _2
             int n = b2++;
             Button button = sender as Button;
             button2.Text = n.ToString();
-            if (n % 2 != 0)
+            if (n % 2 != 0 && n != 1)
             {
                 t++;
                 textBox1.Text = t.ToString();
@@ -58,7 +59,7 @@ namespace _2
             int n = b3++;
             Button button = sender as Button;
             button3.Text = n.ToString();
-            if (n % 2 != 0)
+            if (n % 2 != 0 && n != 1)
             {
                 t++;
                 textBox1.Text = t.ToString();
@@ -70,7 +71,7 @@ namespace _2
             int n = b4++;
             Button button = sender as Button;
             button4.Text = n.ToString();
-            if (n % 2 != 0)
+            if (n % 2 != 0 && n != 1)
             {
                 t++;
                 textBox1.Text = t.ToString();
@@ -82,7 +83,7 @@ namespace _2
             int n = b5++;
             Button button = sender as Button;
             button5.Text = n.ToString();
-            if (n % 2 != 0)
+            if (n % 2 != 0 && n != 1)
             {
                 t++;
                 textBox1.Text = t.ToString();
@@ -94,7 +95,7 @@ namespace _2
             int n = b6++;
             Button button = sender as Button;
             button6.Text = n.ToString();
-            if (n % 2 != 0)
+            if (n % 2 != 0 && n != 1)
             {
                 t++;
                 textBox1.Text = t.ToString();
@@ -106,7 +107,7 @@ namespace _2
             int n = b7++;
             Button button = sender as Button;
             button7.Text = n.ToString();
-            if (n % 2 != 0)
+            if (n % 2 != 0 && n != 1)
             {
                 t++;
                 textBox1.Text = t.ToString();
@@ -118,7 +119,7 @@ namespace _2
             int n = b8++;
             Button button = sender as Button;
             button8.Text = n.ToString();
-            if (n % 2 != 0)
+            if (n % 2 != 0 && n != 1)
             {
                 t++;
                 textBox1.Text = t.ToString();
@@ -130,12 +131,15 @@ namespace _2
             int n = b9++;
             Button button = sender as Button;
             button9.Text = n.ToString();
-      if  (n % 2!=0)
-                {
-                    t++;
-                    textBox1.Text = t.ToString();
-                }
             
+              if (n % 2 != 0 && n != 1)
+            {
+                t++;
+                textBox1.Text = t.ToString();
+            }
         }
+        
+            
+        
     }
 }
